@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed');
+
+* { 
+    margin: 0px;
+    padding: 0px;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+}
+
+body { 
+background-color: #ededed;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 1.5em;
+    text-rendering: optimizeLegibility;
+}
+
+.row { 
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*
+-------------------------
+HEADER
+-------------------------
+*/
+
+.header-img { 
+    background-image:url(images/bg1.jpg);
+    min-height: 100vh;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;   
+    
+}
+
+.header-text { 
+    position: absolute;
+    top: 50%;
+    width : 100%;
+    text-align: center;
+    color: #FFF;
+    -webkit-transform: translate(0, -50%);    transform: translate(0, -50%);
+    
+}
+
+header h1 { 
+   color: #fff;
+    font-size: 200%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+/*
+-------------------------
+BUTTONS
+-------------------------
+*/
+
+.btn:link, .btn:visited { 
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    margin-right: 10px;
+}
+    
+.btn-main:link,
+.btn-main:visited{
+    background-color: #2c8ac7;
+    border: 1px solid #2c8ac7;
+    color : #fff;
+}
+
+.btn-ghost:link, 
+.btn-ghost:visited { 
+border: 1px solid #fff;
+    color: #fff;   
+}
+
+.btn:hover, 
+.btn:active { 
+   background-clip: #2980b9;
+}
+
+.btn-main:hover, 
+.btn-main:active{
+    background-color: #2980b9;
+    border: 1px solid #2980b9;
+    color : #fff;
+}
+
+.btn-ghost:hover, 
+.btn-ghost:active { 
+border: 1px solid #2980b9;
+    background-color: #2980b9;
+    color: #fff;   
+}
+
+/*
+-------------------------
+Navigation Bar
+-------------------------
+*/
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+
+
+.main-nav-open{ 
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.main-nav-open li {
+    display: block;
+    text-align: right;
+    background-color: #fff;
+}
+
+.main-nav-open a { 
+    text-decoration: none;
+    color: #000;
+}
+
+.main-nav-open li:hover{ 
+background-color: aqua;
+    background-color: #eee;
+}
+
+
+
+.main-nav li:not(:nth-child(1)) { 
+    display: none;
+    margin-left: 30px;
+    font-size: 100%;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.logo {
+    text-decoration: none;
+    text-transform: uppercase ;
+    margin-top: 20px;
+    color: #fff;
+    float: left;
+}
+
+
+/*
+--------------------
+Card Box
+--------------------
+*/
+
+.info-card { 
+  max-width:1170px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1em 2em 1em 2em;
+}
+
+.card { 
+    background-color: #fff;
+  -webkit-box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+-webkit-transition: -webkit-box-shadow .4s;transition: -webkit-box-shadow .4s;transition: box-shadow .4s;transition: box-shadow .4s, -webkit-box-shadow .4s;
+}
+.card:hover {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-item p { 
+padding-bottom: 10px;
+}
+
+.card { 
+margin : 0 0 1em 0;
+}
+
+.card-item { 
+text-align: center;
+}
+
+.card-item h2 { 
+margin: 0px;
+font-size: 1.5em;
+    border-bottom: 3px solid rgba(131, 131, 131, 0.10);
+}
+
+.card-item p { 
+font-size: 80%;
+}
+
+.img1 { 
+    width:100%;
+    height: auto;
+}
+
+
+.info-card a { 
+text-decoration: none;
+color: #000;
+}
+
+
+
+/*
+FOOTER
+*/
+
+.footer1 { 
+list-style: none;
+        color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+    background-color: #414141;
+    border-bottom: 1px solid #fbfbfb;
+}
+.footer1 li{
+    padding: 10px;
+    display: block;
+}
+
+.footer1 a { 
+text-decoration: none;
+    font-size: 0.7em;
+color: #fff;
+}
+
+.footer1 a:hover { 
+color: rgba(55, 128, 255, 0.84);
+}
+
+.footer2 { 
+    padding: 20px;    
+    font-size: 0.7em;
+    background-color: #e1e1e1;
+    color: #000;
+    text-align: center;
+display: grid; 
+    grid-template-columns: 1fr;
+}
+.footer2 img { 
+width : 150px; height: auto;
+}
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+    font-size: 0.7em;
+    color: #fff;
+    background-color: #414141;
+}
+
+
+/*
+Slider
+*/
+
+.new { 
+background-image: url(images/IMG1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+}
+
+.slider-head {
+    display: inline-block;
+    background-color: #000;
+    margin-bottom: 10px; 
+    color: #fff;
+    padding : 10px;
+    font-size: 2em;
+}
+
+.slider-head span { 
+font-weight: 100;
+}
+
+.item {
+    border: 1px solid rgba(137, 137, 137, 0.52);
+    background-color: #fafafa;
+}    
+
+.item > * { 
+margin: 0px;
+}
+
+.item h3 {
+display: block;
+    border-bottom: 1px solid #eee;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.item p { 
+font-size: 0.7em;
+    padding : 5px;
+}
+    
+/*
+Shade Card 
+*/
+
+.colorRange { 
+padding : 20px 10px 10px 10px;
+}
+
+.colorRange img { 
+max-width: 100%;
+    padding: 10px;
+}
+
+.colorRange h2 { 
+border: none;
+}
+
+.colorRange h3 { 
+    padding: 10px;
+    font-size: 1em;
+    text-transform:uppercase;
+}
+
+/*
+On Big screen
+*/
+
+@media(min-width:800px){
+    .info-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .card { 
+    margin : 0 1em 0 0;
+    }
+    
+    .footer1 li{
+    display: inline-block;
+    }
+    
+    .footer2 { 
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .footer-address { 
+    text-align: right;
+padding-top: 20px;    
+    }
+    .footer-email { 
+    text-align: left;
+        
+        padding-top: 20px;
+    }
+    
+    main-nav { 
+    display: inline-block;
+    }
+    
+}
