@@ -181,11 +181,13 @@ page
 }
 
 .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
 }
 
 .wrapper > *{
-  padding: 1em;
+  padding: 2em;
 }
 
 .company-info{
@@ -250,6 +252,10 @@ grid-column: 1 / 3;
 FOOTER
 */
 
+footer {
+font-family: 'Saira Semi Condensed', sans-serif;
+}
+
 .footer1 { 
 list-style: none;
         color: #fff;
@@ -261,7 +267,7 @@ list-style: none;
 }
 .footer1 li{
     padding: 10px;
-    display: block;
+    display: inline-block;
 }
 
 .footer1 a { 
@@ -276,12 +282,20 @@ color: rgba(55, 128, 255, 0.84);
 
 .footer2 { 
     padding: 20px;    
-    font-size: 0.7em;
+    font-size: 0.8em;
     background-color: #e1e1e1;
     color: #000;
     text-align: center;
 display: grid; 
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-address { 
+    text-align: right;
+padding-top: 20px;    
+}
+.footer-email { 
+    text-align: left;
+    padding-top: 20px;
 }
 .footer2 img { 
 width : 150px; height: auto;
@@ -296,38 +310,20 @@ width : 150px; height: auto;
 }
 
 
-/* LARGE SCREENS */
-@media(min-width:800px){
+/* MOBILE SCREENS */
+@media(max-width:800px){
   .wrapper{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
+    display: block;  }
 
   .wrapper > *{
-    padding:2em;
+    padding:1em;
   }
-
-  .company-info h3, .company-info ul, .brand{
-    text-align: left;
-  }
-    
-    .footer1 li{
-    display: inline-block;
-    }
-    
-    .footer2 { 
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .footer-address { 
-    text-align: right;
-padding-top: 20px;    
-    }
-    .footer-email { 
-    text-align: left;
-    padding-top: 20px;
-    }
     .gmaps { 
     padding: 0px;
-        margin: 0px;
     }
+     .footer1 li {display: block;}
+    .footer2 {    grid-template-columns: 1fr;}
+    .footer-address {text-align: center;}
+    .footer-email {text-align: center;}
+    
 }

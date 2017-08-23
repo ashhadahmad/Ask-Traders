@@ -219,7 +219,7 @@ Card Container
 }
 .card-content {
 font-family: 'Saira Semi Condensed', sans-serif;
-    padding: 2px 16px;
+    padding: 0px;
     text-align: justify;
 }
 
