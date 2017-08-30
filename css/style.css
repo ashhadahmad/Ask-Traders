@@ -119,55 +119,46 @@ Navigation Bar
 -------------------------
 */
 
+
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 25px;
+    font-size: 1em;
+    margin-right: 20px;
 }
-
-
-.main-nav-open{ 
-    float: right;
-    list-style: none;
-    margin-top: 20px;
-}
-
-.main-nav-open li {
-    display: block;
-    text-align: right;
-    background-color: #fff;
-}
-
-.main-nav-open a { 
-    text-decoration: none;
-    color: #000;
-}
-
-.main-nav-open li:hover{ 
-background-color: aqua;
-    background-color: #eee;
-}
-
-
-
-.main-nav li:not(:nth-child(1)) { 
-    display: none;
+.main-nav li { 
+display: inline-block;
     margin-left: 30px;
-    font-size: 100%;
+    font-size: 70%;
+}
+.menuitem:link,
+.menuitem:visited { 
+    color : #fff; 
+    text-decoration: none ;
+    text-transform: uppercase;   
+    border-bottom: 2px solid transparent;
+    padding : 8px 0px;
+    transition: border-bottom 0.2s;
 }
 
-.main-nav a {
-    text-decoration: none;
-    color: #fff;
+.menuitem:hover,
+.menuitem:active { 
+    border-bottom: 2px solid #2980b9;
 }
-
 
 .logo {
+    font-size: 1.5em;
     text-decoration: none;
-    text-transform: uppercase ;
+    text-transform: uppercase;
     margin-top: 20px;
     color: #fff;
     float: left;
+    margin-left: 20px;
+}
+
+.dropdownicon { 
+display: none;
 }
 
 
@@ -275,7 +266,6 @@ padding-top: 20px;
 }
 .footer-email { 
     text-align: left;
-    padding-top: 20px;
 }
 .footer2 img { 
 width : 150px; height: auto;
@@ -375,10 +365,59 @@ On Big screen
     margin : 10px 0px;
     }
     
+/*FOOTER*/    
     .footer1 li {display: block;}
-    .footer2 {    grid-template-columns: 1fr;}
+    .footer2 {grid-template-columns: 1fr;}
     .footer-address {text-align: center;}
     .footer-email {text-align: center;}
     
     
+/*NAVBAR-MOBILE*/
+    .menuitem { 
+display: none ;
+    }
+    .main-nav { 
+    margin-top: 10px;
+    }
+    .main-nav li { 
+    padding: 0px;
+        margin: 0px
+            
+    }
+    .dropdownicon { 
+        position : relative;
+        font-size: 40px;
+        display: block;
+        width: 100%;
+        float: right;
+        margin: 0px;
+        border: 0px;
+          color : #fff; 
+    text-decoration: none ;
+    padding : 8px 0px;
+     
+    }
+    
+    .main-nav-reponsive { 
+    position: relative;
+    
+    }
+    
+    .main-nav-reponsive .dropdownmenu { 
+    
+    position: relative;
+    }
+    
+    .main-nav-reponsive li { 
+    display: block;
+    font-size: 1em;
+    float: none;
+    }
+    
+    .main-nav-reponsive a { 
+    display: block;
+    text-align: center;
+    }
+
+    }
 }
