@@ -28,11 +28,21 @@ font-family: 'Saira Semi Condensed', sans-serif;
     margin: 0 auto;
 }
 
+.row2 { 
+ width: 1160px;
+    margin : 0 auto;
+}
+
 /*
 -------------------------
 HEADER
 -------------------------
 */
+nav { 
+background-color: #eee;
+border-bottom: 3px solid rgba(0, 0, 0, 0.22);
+}
+
 
 .header-img { 
     background-image:url(images/bg1.jpg);
@@ -55,7 +65,7 @@ HEADER
     
 }
 
-header h1 { 
+.header-img h1 { 
    color: #fff;
     font-size: 200%;
     font-weight: 300;
@@ -177,13 +187,13 @@ Card Box
   padding:1em 2em;
 }
 
-.card { 
+.card1 { 
     background-color: #fff;
   -webkit-box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
 -webkit-transition: -webkit-box-shadow .4s;transition: -webkit-box-shadow .4s;transition: box-shadow .4s;transition: box-shadow .4s, -webkit-box-shadow .4s;
 
 }
-.card:hover {
+.card1:hover {
     -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -191,7 +201,7 @@ Card Box
 padding-bottom: 10px;
 }
 
-.card { 
+.card1 { 
 margin : 0px 10px;
 }
 
@@ -341,7 +351,9 @@ max-width: 100%;
     padding: 10px;
 }
 
-.colorRange h2 { 
+.colorRange h4 {
+    text-align: center;
+    padding-top: 10px;
 border: none;
 }
 
@@ -361,7 +373,7 @@ On Big screen
  display: block;
     }
     
-    .card { 
+    .card1 { 
     margin : 10px 0px;
     }
     

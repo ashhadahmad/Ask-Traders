@@ -76,40 +76,11 @@ border: 1px solid #2980b9;
 Navigation Bar
 -------------------------
 */
-
-
-.main-nav {
-    float: right;
-    list-style: none;
-    margin-top: 20px;
-}
-.main-nav li { 
-display: inline-block;
-    margin-left: 30px;
-    font-size: 70%;
-}
-.main-nav li a:link,
-.main-nav li a:visited { 
-    color : #fff; 
-    text-decoration: none ;
-    text-transform: uppercase;   
-    border-bottom: 2px solid transparent;
-    padding : 8px 0px;
-    transition: border-bottom 0.2s;
+nav { 
+background-color: #eee;
+border-bottom: 3px solid rgba(0, 0, 0, 0.22);
 }
 
-.main-nav li a:hover,
-.main-nav li a:active { 
-    border-bottom: 2px solid #2980b9;
-}
-
-.logo {
-    text-decoration: none;
-    text-transform: uppercase ;
-    margin-top: 20px;
-    color: #fff;
-    float: left;
-}
 
 /*HEADER*/
 
@@ -174,6 +145,7 @@ page
 
 .brand{
   text-align: center;
+  padding: 20px;
 }
 
 .brand span{
