@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed');
-* { 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700');
+* {
     margin: 0px;
     padding: 0px;
 box-sizing: border-box;
@@ -12,13 +12,12 @@ h1 {
 html {
     background-color: #fff;
     color: #555;
-font-family: 'Saira Semi Condensed', sans-serif;
-    font-weight: 300;
-    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
     text-rendering: optimizeLegibility;
 }
 
-.row { 
+.row {
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -29,16 +28,15 @@ BUTTONS
 -------------------------
 */
 
-.btn:link, .btn:visited { 
+.btn:link, .btn:visited {
     display: inline-block;
     padding: 10px 30px;
-    font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
     margin-right: 10px;
 }
-    
+
 .btn-main:link,
 .btn-main:visited{
     background-color: #2c8ac7;
@@ -46,29 +44,29 @@ BUTTONS
     color : #fff;
 }
 
-.btn-ghost:link, 
-.btn-ghost:visited { 
+.btn-ghost:link,
+.btn-ghost:visited {
 border: 1px solid #fff;
-    color: #fff;   
+    color: #fff;
 }
 
-.btn:hover, 
-.btn:active { 
+.btn:hover,
+.btn:active {
    background-clip: #2980b9;
 }
 
-.btn-main:hover, 
+.btn-main:hover,
 .btn-main:active{
     background-color: #2980b9;
     border: 1px solid #2980b9;
     color : #fff;
 }
 
-.btn-ghost:hover, 
-.btn-ghost:active { 
+.btn-ghost:hover,
+.btn-ghost:active {
 border: 1px solid #2980b9;
     background-color: #2980b9;
-    color: #fff;   
+    color: #fff;
 }
 
 /*
@@ -76,7 +74,7 @@ border: 1px solid #2980b9;
 Navigation Bar
 -------------------------
 */
-nav { 
+nav {
 background-color: #eee;
 border-bottom: 3px solid rgba(0, 0, 0, 0.22);
 }
@@ -84,36 +82,32 @@ border-bottom: 3px solid rgba(0, 0, 0, 0.22);
 
 /*HEADER*/
 
-.header-img { 
+.header-img {
     background-image:url(../css/images/bg1.jpg);
     min-height: 50vh;
     position: relative;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat;   
-    
+    background-repeat: no-repeat;
+
 }
 
-.header-text { 
+.header-text {
     position: absolute;
-    top: 30%;
-    font-size: 250%;
+    top: 40%;
     width : 100%;
     text-align: center;
     color: #FFF;
     transform: translate(0, -50%);
-    
 }
 
-header h1 { 
-   color: #fff;
-    font-size: 200%;
-    font-weight: 300;
+.header-text h1 { 
     text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 5px;
+    font-weight: 700;
+    font-size: 3em;
 }
+
 
 /*
 -----------------------
@@ -121,13 +115,10 @@ page
 -----------------------
 */
 .content {
-    font-size: 100%;
   box-sizing: border-box;
   background:#f1f1f1;
   color:#485e74;
   line-height:1.6;
-/*  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  */
     padding:1em;
 }
 
@@ -144,13 +135,11 @@ page
 }
 
 .brand{
-  text-align: center;
-  padding: 20px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 300;
 }
 
-.brand span{
-  color:#fff;
-}
 
 .wrapper{
     display: grid;
@@ -160,10 +149,11 @@ page
 
 .wrapper > *{
   padding: 2em;
+    font
 }
 
 .company-info{
-  background:#c9e6ff;
+    background:#c9e6ff;
 }
 
 .company-info h3, .company-info ul{
@@ -197,7 +187,7 @@ page
 .contact form button, .contact form input, .contact form textarea{
   width:100%;
   padding:1em;
-  border:1px solid #c9e6ff;
+  border: 0.5px solid #c9e6ff;
 }
 
 .contact form button{
@@ -213,7 +203,7 @@ page
   transition: background-color 0.2s ease-out;
 }
 
-.gmaps { 
+.gmaps {
 padding: 0px;
 width: 100%;
 height: 100%;
@@ -223,19 +213,15 @@ grid-column: 1 / 3;
 /*
 FOOTER
 */
-
-footer {
-font-family: 'Saira Semi Condensed', sans-serif;
-}
+/*
+FOOTER
+*/
 
 .footer1 { 
-list-style: none;
-        color: #fff;
+    font-size: 1em;
+    list-style: none;
     text-align: center;
-    padding: 20px;
-    
     background-color: #414141;
-    border-bottom: 1px solid #fbfbfb;
 }
 .footer1 li{
     padding: 10px;
@@ -244,42 +230,41 @@ list-style: none;
 
 .footer1 a { 
 text-decoration: none;
-    font-size: 0.7em;
 color: #fff;
 }
 
 .footer1 a:hover { 
-color: rgba(55, 128, 255, 0.84);
+color: #2ea4f0;
 }
 
+
 .footer2 { 
-    padding: 20px;    
-    font-size: 0.8em;
-    background-color: #e1e1e1;
+    padding: 10px;
     color: #000;
     text-align: center;
-display: grid; 
+    display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 .footer-address { 
     text-align: right;
-padding-top: 20px;    
 }
 .footer-email { 
     text-align: left;
-    padding-top: 20px;
 }
 .footer2 img { 
-width : 150px; height: auto;
+    width : 150px; 
+    height: auto;
 }
-
 .copyright {
     padding: 20px;
     text-align: center;
-    font-size: 0.7em;
+    font-size: 1em;
     color: #fff;
     background-color: #414141;
 }
+
+
 
 
 /* MOBILE SCREENS */
@@ -289,13 +274,24 @@ width : 150px; height: auto;
 
   .wrapper > *{
     padding:1em;
+      
   }
-    .gmaps { 
+    .contact form {
+display: block;
+    }
+
+    .content {
+        width: 100%;
+        padding: 0px;
+        margin : 0px;
+
+    }
+    .gmaps {
     padding: 0px;
     }
      .footer1 li {display: block;}
     .footer2 {    grid-template-columns: 1fr;}
     .footer-address {text-align: center;}
     .footer-email {text-align: center;}
-    
+
 }
