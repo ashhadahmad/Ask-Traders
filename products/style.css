@@ -44,7 +44,7 @@ font-size: 1em;
 /*HEADER*/
 
 .header-img {
-    background-image:url(../css/images/bg1.jpg);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../css/images/bg1.jpg);
     min-height: 50vh;
     position: relative;
     background-position: center;

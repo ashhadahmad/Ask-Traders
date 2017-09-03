@@ -38,7 +38,7 @@ border-bottom: 3px solid rgba(0, 0, 0, 0.22);
 
 
 .header-img {
-    background-image:url(../css/images/bg1.jpg);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../css/images/bg1.jpg);
     min-height: 50vh;
     position: relative;
     background-position: center;
